@@ -1,0 +1,13 @@
+#include <unistd.h>
+#include <stdio.h>
+
+int main(){
+    int pid= fork();
+    if(pid==0){
+        printf("soy el hijo \n");
+        execl("./hola","hola","Pedro","Luis","Mary",(char *)NULL);
+        printf("ESTA LINEA NO DEBE EJECUTARSE!!!!!!!!!!!!!!!!!!!!!!!!!");
+    }
+    printf("soy el proceso padre\n");
+    return 0;
+}
