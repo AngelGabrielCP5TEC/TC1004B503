@@ -11,7 +11,7 @@ int main(){
     }
     printf("soy el proceso hijo a=%d \n",a);
     printf("Mi hijo es pid=%d \n",pid);
-    sleep(20);
+    sleep(2);
 
     return 0;
 }
